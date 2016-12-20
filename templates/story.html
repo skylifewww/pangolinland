@@ -1,0 +1,87 @@
+{% extends "index.html" %}
+{% load staticfiles %}
+
+
+{% block story %}
+<link href="{% static 'pangolin/FSVS-master/assets/css/style.css' %}" media="all" rel="stylesheet" type="text/css" />
+<!-- <link href="{% static 'pangolin/css/style.css' %}" rel="stylesheet"> -->
+<div id="fsvs-body">
+
+            <div class="slide" style="background-image:url('/static/pangolin/img/slide1.jpg');
+            background-repeat: no-repeat;
+            background-position: 50% 50%;
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            background-size: cover;">
+            <h1 style="color:#000">laser show</h1>
+                
+                <p><h1 style="text-align:center; color:#fff;" class="wow zoomIn" data-wow-duration="2s">In the beginning it was so...</h1></p>
+            </div>
+
+            <div class="slide" style="background-image:url('/static/pangolin/img/slide2.jpg'); 
+            background-repeat: no-repeat;
+            background-position: 50% 50%;
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            background-size: cover;">
+           
+                
+                <p>
+                   <h1 style="text-align:center; color:#fff;">... then there was a dance ...</h1> 
+                </p>
+            </div>
+                
+            <div class="slide" style="background-image:url('/static/pangolin/img/slide3.jpg'); 
+            background-repeat: no-repeat;
+            background-position: 50% 50%;
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            background-size: cover;">
+            
+                <p>
+                    <h2>... We have made the world so ...</h2>
+                </p>
+            </div>
+ 
+ 
+            <div class="slide" style="background-image:url('/static/pangolin/img/slide4.jpg');">    
+               <!-- <h3>Learn all about the world of lasers from the creators of laser technology - Pangolin</h3>  -->
+
+ <!-- Slider --> 
+    <div id="slider" class="fullSection">
+      <div class="container-fluid">
+        
+        <div class="top-heading text-center">
+
+
+        <div class="row paddt-60">
+          <div class="col-md-6 col-md-offset-3">
+          <h2>Get FREE E-Book!</h2>
+              <p><h5>Get free book on lasers, their history and use in the modern world by the team members of the company Pangolin - a leading developer and manufacturer of laser technology.</h5>
+             <h5>After reading this book you will become an expert in laser technology and slightly open to you the mysteries of the laser world.. </h5></p>           
+        </div>
+           </div>
+        </div>
+
+        <!-- quick-form -->
+        <div class="row paddt-60">
+          <div class="col-md-6 col-md-offset-3">
+            
+                <a href="/getebook/"><button  class="btn btn-success btn-lg btn-block">Get Started!</button></a>
+           
+          </div>
+        </div>
+        <!-- ./quick-form -->
+        
+      </div>      
+    </div>  
+    <!-- ./Slider -->
+
+
+
+</div>
+                
+            
+        </div>
+
+        {% endblock %}

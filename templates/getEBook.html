@@ -1,0 +1,101 @@
+{% extends "index.html" %}
+{% load staticfiles %}
+
+<!DOCTYPE html>
+<!-- <html lang="en"> -->
+  <!-- <head> -->
+   
+  <!-- </head> -->
+
+  {% block landing %}
+  <link href="{% static 'pangolin/css/style.css' %}" rel="stylesheet">
+  <body class="static-background">
+  
+
+     
+    <!-- header --> 
+    <header id="header">
+      <nav class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#collapse-navbar" aria-expanded="false">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="/">
+          <img src="{% static 'pangolin/img/pangolin_logo_small.png' %}" alt="logo">
+          </a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="collapse-navbar">      
+          <ul class="nav navbar-nav navbar-right">
+          <li><a href="/">About Us</a></li>  
+          <li><a href="/">News</a></li>  
+          <li><a href="/">Blog</a></li>  
+          <li><a href="/">Contact</a></li>          
+          </ul>
+        </div><!-- /.navbar-collapse -->
+        </div><!-- /.container -->
+      </nav>  
+    </header>
+    <!-- ./header --> 
+
+        <!-- Slider --> 
+    <div id="slider" class="fullSection">
+      <div class="container-fluid">
+        
+        <div class="top-heading text-center">
+          <h2>Get FREE E-Book!</h2>
+              <p>To get your free e-Book on lasers please fill in the registration form. </p>           
+        </div>
+        
+        <!-- quick-form -->
+        <div class="row paddt-60">
+          <div class="col-md-6 col-md-offset-3">
+            <div class="quick-form wow fadeInUp showdelay6">
+              
+              <form role="form">
+                <div class="form-group">
+                  <label>Name</label>
+                  <input type="text" class="form-control">
+                </div>
+                <div class="form-group">
+                  <label>Email</label>
+                  <input type="email" class="form-control">
+                </div>
+                <button  class="btn btn-success btn-lg btn-block">Get Started</button>
+              </form> 
+            </div>
+          </div>
+        </div>
+        <!-- ./quick-form -->
+        
+      </div>      
+    </div>  
+    <!-- ./Slider -->
+
+
+     <div class="col-md-6 col-sm-6 col-md-offset-1">
+                            
+              <div class="padd-tb-20">    
+                <!-- 16:9 aspect ratio -->
+                <div class="embed-responsive embed-responsive-16by9">
+                  <div><a href="https://Pangolin.com"><img src="{% static 'pangolin/img/pangolin.jpg' %}" alt="Pangolin"></a>
+                </div>
+              </div>
+              
+            </div>  
+                                    
+          </div>
+  
+  {% endblock %}    
+
+
+   
+    
+  <!-- </body> -->
+<!-- </html> -->
