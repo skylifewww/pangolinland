@@ -506,35 +506,35 @@
 			 * [addPagination description]
 			 */
 
-			// addPagination : function() {
-			// 	pagination = $('<ul id="fsvs-pagination"></ul>');
-			// 	$( options.selector, body ).each( function(i) {
-			// 		var linkClass = currentSlideIndex === i ? 'pagination-link active' : 'pagination-link';
-			// 		$('<li class="' + linkClass + '"><span><span></span></span></li>').appendTo( pagination );
-			// 	});
-			// 	if( $('#fsvs-pagination').length !== 0 ) {
-			// 		$('#fsvs-pagination').remove();
-			// 	}
-			// 	pagination.appendTo( $('body') );
-			// 	var paginationHeight = pagination.height();
-			// 	var speed = options.speed/1000;
-			// 	$('span', pagination).css({
-			// 		'-webkit-transition': 'all ' + speed + 's',
-			// 		'-moz-transition'	: 'all ' + speed + 's',
-			// 		'-o-transition'		: 'all ' + speed + 's',
-			// 		'transition'		: 'all ' + speed + 's'
-			// 	});
-			// 	pagination.css({
-			// 		marginTop : '-' + (paginationHeight/2) + 'px',
-			// 		right : '25px'
-			// 	});
-			// 	$('li', pagination).bind( 'click.fsvs', function(e){
-			// 		ignoreHashChange = true;
-			// 		$('.active', pagination).removeClass( 'active' );
-			// 		$(this).addClass( 'active' );
-			// 		app.slideToIndex( $(this).index(), e );
-			// 	});
-			// },
+			addPagination : function() {
+				pagination = $('<ul id="fsvs-pagination"></ul>');
+				$( options.selector, body ).each( function(i) {
+					var linkClass = currentSlideIndex === i ? 'pagination-link active' : 'pagination-link';
+					$('<li class="' + linkClass + '"><span><span></span></span></li>').appendTo( pagination );
+				});
+				if( $('#fsvs-pagination').length !== 0 ) {
+					$('#fsvs-pagination').remove();
+				}
+				pagination.appendTo( $('body') );
+				var paginationHeight = pagination.height();
+				var speed = options.speed/1000;
+				$('span', pagination).css({
+					'-webkit-transition': 'all ' + speed + 's',
+					'-moz-transition'	: 'all ' + speed + 's',
+					'-o-transition'		: 'all ' + speed + 's',
+					'transition'		: 'all ' + speed + 's'
+				});
+				pagination.css({
+					marginTop : '-' + (paginationHeight/2) + 'px',
+					right : '25px'
+				});
+				$('li', pagination).bind( 'click.fsvs', function(e){
+					ignoreHashChange = true;
+					$('.active', pagination).removeClass( 'active' );
+					$(this).addClass( 'active' );
+					app.slideToIndex( $(this).index(), e );
+				});
+			},
 
 			/**
 			 * [setSpeed description]
