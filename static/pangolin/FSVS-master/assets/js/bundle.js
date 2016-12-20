@@ -507,10 +507,10 @@
 			 */
 
 			addPagination : function() {
-				pagination = $('<ul id="fsvs-pagination"></ul>');
+				pagination = $('<ul id="fsvs-pagination" style="color:#000"></ul>');
 				$( options.selector, body ).each( function(i) {
 					var linkClass = currentSlideIndex === i ? 'pagination-link active' : 'pagination-link';
-					$('<li class="' + linkClass + '"><span><span></span></span></li>').appendTo( pagination );
+					$('<li  style="color:#000" class="' + linkClass + '"><span><span></span></span></li>').appendTo( pagination );
 				});
 				if( $('#fsvs-pagination').length !== 0 ) {
 					$('#fsvs-pagination').remove();
