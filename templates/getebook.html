@@ -3,8 +3,13 @@
 
 
   {% block landing %}
-  <link href="{% static 'pangolin/css/style.css' %}" rel="stylesheet">
-  <body class="static-background" style="background-image:url('/static/pangolin/img/slide4.jpg');">
+
+     </head>
+
+
+    <body>
+
+  <div class="static-background">
   
 
      
@@ -21,7 +26,7 @@
           <span class="icon-bar"></span>
           </button>
           <a class="navbar-brand" href="/">
-          <img src="{% static 'pangolin/img/pangolin_logo_small.png' %}" alt="logo">
+          <img src="{% static 'pangolinlang/img/pangolin_logo_small.png' %}" alt="logo">
           </a>
         </div>
 
@@ -31,7 +36,7 @@
           <li><a href="/">About Us</a></li>  
           <li><a href="/">News</a></li>  
           <li><a href="/">Blog</a></li>  
-          <li><a href="/">Contact</a></li>          
+          <li><a href="#contact">Contact</a></li>          
           </ul>
         </div><!-- /.navbar-collapse -->
         </div><!-- /.container -->
@@ -62,7 +67,7 @@
                   <label>Email</label>
                   <input type="email" class="form-control">
                 </div>
-                <button  class="btn btn-success btn-lg btn-block">Get Started</button>
+                <button  class="btn btn-success btn-lg btn-block">Get Book Free</button>
               </form> 
             </div>
           </div>
@@ -74,18 +79,197 @@
     <!-- ./Slider -->
 
 
-     <div class="col-md-6 col-sm-6 col-md-offset-1">
-                            
-              <div class="padd-tb-20">    
-                <!-- 16:9 aspect ratio -->
-                <div class="embed-responsive embed-responsive-16by9">
-                  <div><a href="https://Pangolin.com"><img src="{% static 'pangolin/img/pangolin.jpg' %}" alt="Pangolin"></a>
+
+    <!-- Testimonials Section-->
+    <section id="testimonials">
+      <div class="container">
+        <div class="row">
+
+          <div class="section-heading">
+          <h2>Author</h2>
+          <div class="separator"></div>           
+        </div>
+          <div class="col-md-6 col-md-offset-3">
+            <div id="carousel-testimonials">
+             
+              <!-- Wrapper for slides-->
+              <div role="listbox" class="author">
+                <div class="item active"><img src="{% static 'pangolinlang/img/justin.jpg' %}" alt="" class="center-block">
+                  <div class="carousel-caption">
+                    <h2 class="classic">Justin Perry</h2>
+                    <h5 class="no-pad">Chief Operating Officer Pangolin Laser Systems, Inc.</h5>
+                     <ul class="social">
+                       <li><a href="https://www.twitter.com/PangolinSystems"><i class="fa fa-twitter fa-fw fa-lg"></i></a></li>
+              <li><a href="https://www.facebook.com/PangolinSystems"><i class="fa fa-facebook fa-fw fa-lg"></i></a></li>
+              <li><a href="http://www.Youtube.com/PangolinShows"><i class="fa fa-youtube fa-fw fa-lg"></i></a></li>
+                     </ul>
+                  </div>
+              </div>
+                
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+
+
+   
+    
+   <!-- Testimonials Section-->
+    <section id="testimonials">
+      <div class="container">
+        <div class="row">
+
+          <div class="section-heading">
+          <h2>Testimonials</h2>
+          <div class="separator"></div>           
+        </div>
+          <div class="col-md-6 col-md-offset-3">
+            <div id="carousel-testimonials" data-ride="carousel" class="carousel slide carousel-fade">
+             
+              <!-- Wrapper for slides-->
+              <div role="listbox" class="carousel-inner">
+                <div class="item active"><img src="{% static 'pangolinlang/img/senja.jpg' %}" alt="" class="center-block">
+                  <div class="carousel-caption">
+                    <h2 class="classic">Alex Sinitzyn</h2>
+                    <h5 class="no-pad">Thank you very much! Great book - she grabbed me the first lines! A very useful book!</h5>
+                     
+                  </div>
+                </div>
+                <div class="item"><img src="{% static 'pangolinlang/img/bob.jpg' %}" alt="" class="center-block">
+                  <div class="carousel-caption">
+                    <h2 class="classic">Bob Varkevisser</h2>
+                    <h5 class="no-pad">This book turned my mind regarding the world of lasers! Thank you very much!</h5>
+                    
+                  </div>
+                </div>
+                <div class="item"><img src="{% static 'pangolinlang/img/skylife.jpg' %}" alt="" class="center-block">
+                  <div class="carousel-caption">
+                    <h2 class="classic">Vladimir Nybozhinsky</h2>
+                    <h5 class="no-pad">This book has become my reference book! It opened my world of lasers! Thank you very much! </h5>
+                    
+                  </div>
                 </div>
               </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    
+    
+    <!-- contact -->
+    <section id="contact" class="section wow fadeInUp">
+      <div class="container">
+      
+        <div class="section-heading-contact">
+          <h2>Contact Us</h2>
+          <div class="separator"></div> 
+        </div>
+        
+        <div class="row">
+          <div class="col-md-8 col-md-offset-2">
+          
+            <!-- Working Contact Form -->
+            <form  name="sentMessage" id="contactForm" novalidate>
+              <div class="row">
+                <div class="control-group form-group col-sm-6">
+                  <div class="controls">
+                    <label>Name</label>
+                    <input type="text" class="form-control dark" id="name" placeholder="" required data-validation-required-message="Please enter your name.">
+                    <p class="help-block"></p>
+                  </div>
+                </div>
+                <div class="control-group form-group col-sm-6">
+                  <div class="controls">
+                    <label>Email</label>
+                    <input type="email" class="form-control dark" id="email" placeholder="" required data-validation-required-message="Please enter your email address.">
+                    <p class="help-block"></p>
+                  </div>
+                </div>
+              </div>  
+              <div class="control-group form-group">
+                <div class="controls">
+                  <label>Message</label>
+                  <textarea class="form-control dark" rows="7" id="message" placeholder="" required data-validation-required-message="Please enter your message" maxlength="999" style="resize:none"></textarea>
+                  <p class="help-block"></p>
+                </div>
+              </div>
+              <div id="success"></div>
               
-            </div>  
+              <div class="padd-tb-10">
+                <button type="submit" class="btn btn-success btn-lg btn-block">Submit</button>
+              </div>  
+              
+            </form>
+            <div class="clearfix"></div>
+            <!-- Working Contact Form -->
+            
+            <!-- contact-info -->
+            <div class="row">
+              <div class="col-md-4 col-sm-4">
+                <div class="contact-info">      
+                  <i class="fa fa-map-marker"></i> 9501 Satellite Boulevard, Suite 109
+Orlando, Florida 32837, USA
+                </div>
+              </div>
+              <div class="col-md-4 col-sm-4">
+                <div class="contact-info">      
+                  <i class="fa fa-envelope-o"></i> contact@pangolin.com
+                </div>
+              </div>
+              <div class="col-md-4 col-sm-4">
+                <div class="contact-info">      
+                  <i class="fa fa-phone"></i> USA Phone: +1-407-299-2088
+                </div>
+              </div>
+            </div>
+            <!-- ./contact-info -->
+            
+          </div>
+        </div>
+      
+      </div>
+  
+    </section>
+    <!-- ./contact -->
+
+
+
+     <!-- <div class="col-md-6 col-sm-6 col-md-offset-1"> -->
+                            
+              <!-- <div class="padd-tb-20">     -->
+                <!-- 16:9 aspect ratio -->
+                <!-- <div class="embed-responsive embed-responsive-16by9"> -->
+                  <!-- <div><a href="https://Pangolin.com"><img src="{% static 'pangolinlang/img/pangolin.jpg' %}" alt="Pangolin"></a> -->
+                <!-- </div> -->
+              <!-- </div> -->
+              
+            <!-- </div>   -->
+            <!-- </div>   -->
                                     
           </div>
+
+          <!-- footer -->
+    <footer id="footer" style="background-image:url('/static/pangolinlang/img/slide4.jpg');">
+      <div class="container">
+        <ul class="list-inline">
+           <li><a href="https://www.twitter.com/PangolinSystems"><i class="fa fa-twitter fa-fw fa-lg"></i></a></li>
+              <li><a href="https://www.facebook.com/PangolinSystems"><i class="fa fa-facebook fa-fw fa-lg"></i></a></li>
+              <li><a href="http://www.Youtube.com/PangolinShows"><i class="fa fa-youtube fa-fw fa-lg"></i></a></li>
+              <li><a href="https://www.linkedin.com/in/pangolinsystems"><i class="fa fa-linkedin fa-fw fa-lg"></i></a></li>
+              <li><a href="https://www.pinterest.com/pangolinlaser"><i class="fa fa-pinterest fa-fw fa-lg"></i></a></li>
+              <li><a href="https://plus.google.com/+PangolinSystems"><i class="fa fa-google-plus fa-fw fa-lg"></i></a></li>
+              <li><a href="http://i.youku.com/u/UMjE5NTk4NzY4"><i class="fa fa-youtube fa-fw fa-lg"></i></a></li>
+        </ul>
+        <div class="copyright">&copy; 2017 Pangolin | <a href="https://Pangolin.com" target="_blank">Pangolin Laser Systems</a></div>
+      </div>
+    </footer>
+    <!-- ./footer -->
   
   {% endblock %}    
 

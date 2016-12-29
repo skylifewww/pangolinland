@@ -14,18 +14,18 @@
      <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height" />
-    <link rel="shortcut icon" href="{% static 'pangolin/img/favicon.png' %}">
+    <link rel="shortcut icon" href="{% static 'pangolinlang/img/favicon.png' %}">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <title>Get e-Book</title>
 
     <!-- Bootstrap -->
-    <link href="{% static 'pangolin/css/bootstrap.min.css' %}" rel="stylesheet">
+    <link href="{% static 'pangolinlang/css/bootstrap.min.css' %}" rel="stylesheet">
           
     <!-- Font Awesome CSS -->
-    <link href="{% static 'pangolin/css/font-awesome.min.css' %}" rel="stylesheet">
+    <link href="{% static 'pangolinlang/css/font-awesome.min.css' %}" rel="stylesheet">
     
     <!-- Simple Line Icons -->
-    <link href="{% static 'pangolin/css/simple-line-icons/simple-line-icons.css' %}" rel="stylesheet">
+    <link href="{% static 'pangolinlang/css/simple-line-icons/simple-line-icons.css' %}" rel="stylesheet">
 
     
     
@@ -34,79 +34,55 @@
     
     
     <!-- animate -->
-    <link href="{% static 'pangolin/css/animate.min.css' %}" rel="stylesheet">
+    <link href="{% static 'pangolinlang/css/animate.min.css' %}" rel="stylesheet">
+    <link href="{% static 'pangolinlang/css/owl.carousel.css' %}" rel="stylesheet">
+    <link href="{% static 'pangolinlang/css/owl.theme.css' %}" rel="stylesheet">
     
     <!-- style -->
-    <link href="{% static 'pangolin/css/style.css' %}" rel="stylesheet">
+    <link href="{% static 'pangolinlang/css/style.css' %}" rel="stylesheet">
   
 
         
-        <link rel="stylesheet" href="{% static 'pangolin/css/animate.min.css' %}">
+        <link rel="stylesheet" href="{% static 'pangolinlang/css/animate.min.css' %}">
       
 
-        <script src="{% static 'pangolin/js/jquery-1.12.4.min.js' %}"></script> 
+        <script src="{% static 'pangolinlang/js/jquery-1.12.4.min.js' %}"></script> 
 
-        <script src="{% static 'pangolin/FSVS-master/assets/js/bundle.js' %}"></script>
-        <script src="{% static 'pangolin/js/wow.min.js' %}"></script>
+        
+        <script src="{% static 'pangolinlang/js/wow.js' %}"></script>
               <script>
               new WOW().init();
               </script>
-        <script>
-        jQuery(document).ready(function($){
-            var slider = $.fn.fsvs({
-                autoPlay            : false,
-                speed               : 1000,
-                bodyID              : 'fsvs-body',
-                selector            : '> .slide',
-                mouseSwipeDisance   : 40,
-                afterSlide          : function(){},
-                beforeSlide         : function(){},
-                endSlide            : function(){},
-                mouseWheelEvents    : true,
-                mouseWheelDelay     : false,
-                mouseDragEvents     : true,
-                touchEvents         : true,
-                arrowKeyEvents      : true,
-                pagination          : true,
-                nthClasses          : 5,
-                detectHash          : true
-            });
-        });
-        </script>
-    </head>
-
-
-    <body>
+       
+ 
 
      {% block landing %}{% endblock %}
-{% block story %}{% endblock %}   
+     {% block story %}{% endblock %}   
 
  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->    
    
-    <script src="{% static 'pangolin/js/bootstrap.min.js' %}"></script>
+    <script src="{% static 'pangolinlang/js/bootstrap.min.js' %}"></script>
     
     <!-- smooth-scroll -->
-    <script src="{% static 'pangolin/js/smooth-scroll.js' %}"></script>
+    <script src="{% static 'pangolinlang/js/smooth-scroll.js' %}"></script>
     
     <!-- backstretch -->
-    <script src="{% static 'pangolin/js/backstretch.min.js' %}"></script>
+    <script src="{% static 'pangolinlang/js/backstretch.min.js' %}"></script>
     
-    
-    <!-- wow -->
-    <script src="{% static 'pangolin/js/wow.min.js' %}"></script>
+    <script src="{% static 'pangolinlang/js/owl.carousel.js' %}"></script>
     
     <!-- typed -->
-    <script src="{% static 'pangolin/js/typed.min.js' %}"></script>
+    <script src="{% static 'pangolinlang/js/typed.min.js' %}"></script>
             
     <!-- magnific-popup -->
-    <script src="{% static 'pangolin/js/jquery.magnific-popup.js' %}"></script>
+    <script src="{% static 'pangolinlang/js/jquery.magnific-popup.js' %}"></script>
     
     <!-- jqBootstrapValidation -->
-    <script src="{% static 'pangolin/js/jqBootstrapValidation.js' %}"></script>
+    <script src="{% static 'pangolinlang/js/jqBootstrapValidation.js' %}"></script>
     
           
     <!-- main js -->
-    <script src="{% static 'pangolin/js/main.js' %}"></script>
+    <script src="{% static 'pangolinlang/js/main.js' %}"></script>
 
         
     </body>
