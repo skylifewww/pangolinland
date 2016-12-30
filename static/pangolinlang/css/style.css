@@ -11,10 +11,16 @@ body {
   color: #f1f1f1; }
 
 /* line 16, ../sass/style.scss */
-h1, h2, h3, h4, h5, h6 {
+h1, h2, h3, h4, h6 {
   color: #f1f1f1;
   font-weight: bold;
   text-transform: capitalize; }
+
+h5 {
+  color: #f1f1f1;
+  /*font-weight: bold;*/
+  /*text-transform: capitalize;*/
+   }  
 
 /* line 22, ../sass/style.scss */
 .form-control {
@@ -269,7 +275,7 @@ blockquote .small, blockquote footer, blockquote small {
 .section {
   position: relative;
   min-height: 100%;
-  padding: 100px 0 0px; }
+  padding: 50px 0 0px; }
 
 /* line 67, ../sass/style.scss */
 #bg_pattern {
@@ -519,7 +525,7 @@ a.link {
 
   .section-heading-contact {
   text-align: center;
-  padding: 40px 0; }
+  padding: 40px 0 20px 0; }
   /* line 273, ../sass/style.scss */
   .section-heading h2 {
     margin: 0;
